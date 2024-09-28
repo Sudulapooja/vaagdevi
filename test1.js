@@ -1,5 +1,7 @@
-for(var a=0;a<=5;a++)
-{
-    console.log("inside block of a value is="+a);
-}
-console.log("outside block a value is="+a);
+const os=require('os')
+console.log(os.type());
+console.log(os.version());
+console.log(os.freemem());
+console.log(os.cpus());
+console.log(__dirname);
+console.log(__filename);
