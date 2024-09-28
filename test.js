@@ -1,19 +1,5 @@
-const express=require("express")
-const MongoClient=require("mongoose");
-const dotEnv=require("dotenv");
-const app=express();
-
-dotEnv.config();
-const PORT=process.env.PORT || 5555;
-
-MongoClient.connect(process.env.MONGO_URI)
-.then(()=>{
-    console.log("MongoDB Atlas Cloud connected successfully")
-})
-.catch((err)=>{
-    console.log(err)
-})
-
-app.listen(PORT,()=>{
-    console.log(`My port is running on ${PORT} number`)
-})
+const path=require('path')
+console.log(path.dirname(__filename));
+console.log(path.dirname(__filename));
+console.log(path.basename(__filename));
+console.log(path.extname(__filename));
